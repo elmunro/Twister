@@ -1,0 +1,61 @@
+<a href="/">Home</a>
+<a href="javascript:void(0);" id="profile">Profil</a>
+<a href="javascript:void(0);" id="deconnexion">Deconnexion</a>
+<a href="javascript:void(0);" class="icon" onclick="icon()">&#9776;</a>
+
+<a id="loginModalButton">Se connecter</a>
+<div id="loginModal" class="modal">
+    <div class="modal-window">
+        <div class="modal-header">
+            <span class="close" id="loginSpan">&times;</span>
+            <h1>Connexion</h1>
+        </div>
+        <div class="modal-content">
+            <form method="get" id="loginForm">
+                <div class="form-fields">
+                    <label for="loginPseudo">Pseudo</label>
+                    <input type="text" name="loginPseudo" id="loginPseudo" required/>
+                    <label for="loginMdp">Mot de passe</label>
+                    <input type="password" name="loginMdp" id="loginMdp" required/>
+                </div>
+                <div class="error_message" id="login_div_erreur"></div>
+
+                <a id="oubliMdp" class="lien" href="#">Mot de passe oublié ?</a>
+                <a id="registerInstead" class="lien" href="#">Pas encore inscrit ?</a>
+                <input class="modalButton" type="submit" name="submitConnexion" id="submitConnexion"
+                       value="Se connecter"/>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<a id="registerModalButton">S'inscrire</a>
+<div id="registerModal" class="modal">
+    <div class="modal-window">
+        <div class="modal-header">
+            <span class="close" id="registerSpan">&times;</span>
+            <h1>Connexion</h1>
+        </div>
+        <div class="modal-content">
+            <form method="get" id="registerForm">
+                <div class="form-fields">
+                    <label for="registerNom">Nom</label>
+                    <input type="text" name="registerNom" id="registerNom" required/>
+                    <label for="registerPrenom">Prenom</label>
+                    <input type="text" name="registerPrenom" id="registerPrenom" required/>
+                    <label for="registerPseudo">Pseudo</label>
+                    <input type="text" name="registerPseudo" id="registerPseudo" required/>
+                    <label for="registerMdp">Mot de passe</label>
+                    <input type="password" name="registerMdp" id="registerMdp" required/>
+                    <label for="verifyMdp">Verification mot de passe</label>
+                    <input type="password" name="verifyMdp" id="verifyMdp" required/>
+                </div>
+                <div class="error_message" id="register_div_erreur"></div>
+                <a id="loginInstead" class="lien" href="#">Déjà inscrit ?</a>
+                <input class="modalButton" type="submit" name="submitInscription" id="submitInscription"
+                       value="S'inscrire"/>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Twister:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/Twister_war</output-path>
+    <root id="archive" name="Twister_war.war">
+      <element id="artifact" artifact-name="Twister:war exploded" />
+      <element id="javaee-facet-resources" facet="Twister/web/Web" />
+      <element id="directory" name="META-INF">
+        <element id="artifact" artifact-name="Twister:war exploded" />
+      </element>
+      <element id="module-output" name="Twister" />
+    </root>
+  </artifact>
+</component>

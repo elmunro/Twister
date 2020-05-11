@@ -1,0 +1,28 @@
+<script id="profileTemplateScript" type="text/html">
+
+    <img src="{{imgRef}}" class="profilePic" id="userPic"/>
+    <h4>Infos Profil</h4>
+    <button id="follow_{{_id}}" class="followButton">Ajouter l'ami</button>
+    <div id="profileInfo">
+        <p id="nom">Nom : {{nom}}</p>
+        <p id="prenom">Prenom : {{prenom}}</p>
+        <p id="login">Login : {{login}}</p>
+    </div>
+</script>
+
+
+<script id="friendListTemplateScript" type="text/html">
+
+    {{#users}}
+    <div id="friend_{{login}}" class="friendBox">
+        <img src="{{imgReference}}" class="profilePic"/>
+        <button id="unfollow_{{_id}}" class="unfollowButton">Supprimer l'ami</button>
+        <a class="friendLogin" href="javascript:void(0);"  id="f_login_{{_id}}">{{login}}</a>
+        <p class="friendInfo">Nom : {{nom}}</p>
+        <p class="friendInfo">Prenom : {{prenom}}</p>
+    </div>
+    {{/users}}
+    {{^users}}
+    <h5 id="noFriends">Vous n'avez pas encore d'amis..</h5>
+    {{/users}}
+</script>

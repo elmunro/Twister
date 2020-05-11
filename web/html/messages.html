@@ -1,0 +1,65 @@
+<script id="messageTemplateScript" type="text/html">
+    <form method="get" id="newMessageForm">
+        <label id="newMessageLabel" for="newMessageText"> Nouveau message</label>
+        <textarea type="text" id="newMessageText" name="newMessageText"></textarea>
+        <input type="submit" id="newMessageSubmit" value="Post"/>
+        <div id="newMessageError"></div>
+    </form>
+    {{#messages}}
+    <div id="message_{{_id}}" class="messageContainer">
+
+        <a class="message_auteur" href="javascript:void(0);">{{author.login}} a posté</a>
+        <div class="message_date" id="msg_date_{{_id}}">
+            {{date.$date}}
+        </div>
+        <div class="message_text">
+            {{text}}
+        </div>
+        <a class="commentLabel" id="commentLabel_{{_id}}">Voir les commentaires </a>
+        <div class="modal" id="modal_{{_id}}">
+            <div class="commentContainer modal-window">
+                <div class="modal-header">
+                    <a class="message_auteur" href="javascript:void(0);">{{author.login}} a posté</a>
+                    <div class="message_date" id="msg_date_{{_id}}">
+                        {{date.$date}}
+                    </div>
+                    <div class="message_text">
+                        {{text}}
+                    </div>
+                </div>
+                <div class="comments"></div>
+                <div class="modal-footer">
+                    <form id="newCommentForm_{{_id}}">
+                        <label id="newCommentLabel" class="newCommentLabel" for="newCommentText_{{_id}}"> Nouveau
+                            commentaire</label>
+                        <textarea type="text" id="newCommentText_{{_id}}" class="newCommentText"
+                                  name="newCommentText"></textarea>
+                        <div class="newCommentError" id="newCommentError_{{_id}}"></div>
+                        <input type="submit" class="newCommentSubmit" id="newCommentSubmit_{{_id}}" value="Post"/>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    {{/messages}}
+    {{^messages}}
+    <h5 id="noMessages">Pas de messages..</h5>
+    {{/messages}}
+</script>
+
+
+<script id="commentTemplateScript" type="text/html">
+    <div id="comment_{{_id}}" class="commentBox">
+
+        <div class="comment_auteur">{{author.login}} a posté</div>
+        <div class="comment_date" id="comment_date_{{_id}}">
+            {{date.$date}}
+        </div>
+        <div class="comment_text">
+            {{text}}
+        </div>
+
+    </div>
+</script>
+

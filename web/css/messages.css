@@ -1,0 +1,186 @@
+
+.messageContainer {
+    border: 1px solid #4C6D75;
+    display: block;
+    margin: 1px auto;
+    padding: 10px;
+    width: 40%;
+}
+
+.commentContainer.modal .modal-window {
+    height: auto;
+    width: 50%;
+    overflow: scroll;
+}
+
+/*noinspection ALL*/
+.commentContainer .commentBox {
+    border: 1px solid #4C6D75;
+    display: block;
+    margin: 1px auto;
+    padding: 5px;
+    width: -moz-available;
+    width: available;
+    width: -webkit-fill-available;
+}
+
+/*noinspection ALL*/
+.comments {
+    border: 1px solid #4C6D75;
+    display: block;
+    margin: 1px auto;
+    padding: 5px;
+    width: auto;
+    margin: auto;
+    height: auto;
+}
+
+#newMessageForm {
+    border: 1px solid #4C6D75;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 40%;
+}
+
+/*noinspection ALL*/
+#newMessageText, .newCommentText {
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
+    border: 3px solid #4C6D75;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    display: block;
+    float: none;
+    font-size: 15px;
+    margin: 10px;
+    padding: 10px;
+    resize: vertical;
+    text-align: justify;
+    width: available;
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
+
+#newMessageError, .newCommentError {
+    color: #C48D7F;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.newCommentText {
+    height: auto;
+    display: block;
+    float: none;
+    font-size: 15px;
+    resize: none;
+}
+
+
+#newMessageSubmit,
+.newCommentSubmit {
+    background-color: #7FB6C4;
+    border: 0;
+    color: black;
+    display: block;
+    font-size: 13px;
+    padding: 10px;
+    text-align: right;
+    text-align: -moz-right;
+    text-align: -webkit-right;
+}
+
+#newMessageSubmit:hover, .newCommentSubmit:hover {
+    background-color: #72A3B0;
+    color: white;
+}
+
+#newMessageSubmit:disabled, .newCommentSubmit:disabled {
+    background-color: rgba(0, 61, 80, 0.51);
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .messageContainer, #newMessageForm {
+        width: 80%;
+    }
+}
+
+.message_text , .comment_text {
+    word-wrap: break-word;
+    display: block;
+    float: none;
+    font-size: 15px;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: justify;
+}
+
+
+.message_auteur, #newMessageLabel, .newCommentLabel, .commentLabel {
+    color: #070707;
+    display: inline;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    text-align: -moz-left;
+    text-align: -webkit-left;
+}
+
+.newCommentLabel {
+    font-size: 15px;
+}
+
+.commentLabel {
+    float: none;
+    width: fit-content;
+    width: -moz-fit-content;
+    display: block;
+    font-size: 15px;
+}
+
+.comment_auteur:hover, .message_auteur:hover, .commentLabel:hover {
+    cursor: pointer;
+    color: #7FB6C4;
+    text-decoration: underline;
+    text-underline: #7FB6C4;
+}
+
+.newCommentLabel:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline: #72A3B0;
+}
+.messageContainer .modal-header{
+    background-color: #7FB6C4;
+}
+.comment_auteur {
+    color: #070707;
+    display: inline;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    text-align: -moz-left;
+    text-align: -webkit-left;
+}
+
+.comment_date {
+    display: inline;
+    float: right;
+    font-size: 13px;
+    text-align: right;
+    text-align: -moz-right;
+    text-align: -webkit-right;
+}
+
+.message_date {
+    display: inline;
+    float: right;
+    font-size: 15px;
+    text-align: right;
+    text-align: -moz-right;
+    text-align: -webkit-right;
+}

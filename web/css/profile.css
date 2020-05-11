@@ -1,0 +1,142 @@
+.profilePic{
+    float: left;
+    margin : auto;
+    padding: 0 8px;
+    height: 100px;
+}
+
+#profileDiv{
+    visibility: hidden;
+    border: 1px solid #4C6D75;
+    display: block;
+    margin: 1px auto;
+    padding: 10px;
+    width: 60%;
+}
+
+
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+#allMessagesDiv{
+    visibility: visible;
+}
+
+#friendListDiv, #userMessagesDiv{
+    visibility: hidden;
+}
+
+.message_text , .comment_text {
+    word-wrap: break-word;
+    display: block;
+    float: none;
+    font-size: 15px;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.unfollowButton{
+    background-color: #7FB6C4;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.followButton{
+    display: none;
+    background-color: #7FB6C4;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.followButton{
+    background-color: #7FB6C4;
+     float: right;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     padding: 14px 16px;
+     transition: 0.3s;
+     font-size: 17px;
+ }
+
+.friendLogin {
+    color: #070707;
+    display: inline;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    text-align: -moz-left;
+    text-align: -webkit-left;
+}
+.friendBox{
+    width: 40%;
+    border: 1px solid #4C6D75;
+    display: block;
+    margin: 1px auto;
+    padding: 5px;
+}
+
+.friendInfo {
+    float: none;
+    width: fit-content;
+    width: -moz-fit-content;
+    display: block;
+    font-size: 15px;
+}
+
+.friendLogin:hover{
+    cursor: pointer;
+    color: #7FB6C4;
+    text-decoration: underline;
+    text-underline: #7FB6C4;
+}
+
+@media screen and (max-width: 1000px) {
+    #profileDiv {
+        width: 90%;
+    }
+    .friendBox{
+        width: 90%;
+    }
+}

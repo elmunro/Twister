@@ -1,0 +1,311 @@
+{
+  "info": {
+    "name": "3i017",
+    "_postman_id": "3511f9e6-3dc9-8960-1709-3578139b9426",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create user",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:8080/user/create?nom=Munro&prenom=Edgar&pswd=toto&login=toto",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "user",
+            "create"
+          ],
+          "query": [
+            {
+              "key": "nom",
+              "value": "Munro",
+              "equals": true
+            },
+            {
+              "key": "prenom",
+              "value": "Edgar",
+              "equals": true
+            },
+            {
+              "key": "pswd",
+              "value": "toto",
+              "equals": true
+            },
+            {
+              "key": "login",
+              "value": "toto",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "Login User 1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:8080/user/login?pswd=password&login=eddmunro",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "user",
+            "login"
+          ],
+          "query": [
+            {
+              "key": "pswd",
+              "value": "password",
+              "equals": true
+            },
+            {
+              "key": "login",
+              "value": "eddmunro",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "Logout User 1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:8080/user/logout?key=31",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "user",
+            "logout"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "31",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "Base ",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:8080/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            ""
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "Login User 2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:8080/user/login?pswd=toto&login=toto",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "user",
+            "login"
+          ],
+          "query": [
+            {
+              "key": "pswd",
+              "value": "toto",
+              "equals": true
+            },
+            {
+              "key": "login",
+              "value": "toto",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "Logout User 2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:8080/user/logout?key=33",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "user",
+            "logout"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "33",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "Add friend",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:8080/friend/add?key=31&id_friend=33",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "friend",
+            "add"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "31",
+              "equals": true
+            },
+            {
+              "key": "id_friend",
+              "value": "33",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "Remove friend",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:8080/friend/remove?key=31&id_friend=33",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "friend",
+            "remove"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "31",
+              "equals": true
+            },
+            {
+              "key": "id_friend",
+              "value": "33",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "addComment",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "http://localhost:8080/msg/addComment?key=31&post_id=45&text=May I have an autograph ?",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "msg",
+            "addComment"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "31",
+              "equals": true
+            },
+            {
+              "key": "post_id",
+              "value": "45",
+              "equals": true
+            },
+            {
+              "key": "text",
+              "value": "May I have an autograph ?",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}

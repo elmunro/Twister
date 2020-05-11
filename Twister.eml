@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" jdk="1.8" jdk_type="JavaSDK">
+	<output-test url="file://$MODULE_DIR$/out/test/Twister"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="Tomcat 8.0.14" scope="PROVIDED"/>
+	<lib name="mongo-2.10.1.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/web/WEB-INF/lib/mongo-2.10.1.jar!/"/>
+	</lib>
+	<lib name="mysql-connector-java-5.1.18-bin.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.18-bin.jar!/"/>
+	</lib>
+	<lib name="servlet-api.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/web/WEB-INF/lib/servlet-api.jar!/"/>
+	</lib>
+	<lib name="json-org.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/web/WEB-INF/lib/json-org.jar!/"/>
+	</lib>
+	<levels>
+		<level name="Tomcat 8.0.14" value="application_server_libraries"/>
+		<level name="Java EE 6-Java EE 6" value="project"/>
+	</levels>
+</component>

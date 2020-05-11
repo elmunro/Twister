@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Twister </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="../res/favicon/twitterIcon.png" type="image/x-icon">
+    <link rel="icon" href="../res/favicon/twitterIcon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/site.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/messages.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/profile.css"/>
+
+    <script type="text/javascript" src="../lib/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../lib/mustache.js"></script>
+    <script type="text/javascript" src="../js/Mediator.js"></script>
+    <script type="text/javascript" src="../js/Init.js"></script>
+    <script type="text/javascript" src="../js/Connexion.js"></script>
+    <script type="text/javascript" src="../js/header.js"></script>
+    <script type="text/javascript" src="../js/Message.js"></script>
+    <script type="text/javascript" src="../js/profile.js"></script>
+</head>
+<body onload="Init()">
+<header id="header">
+    <div class="header">
+
+        <a  id="logo" class="logo" href="/"><img id="logoImg" src="../res/favicon/twitterIcon.png"/>Twister</a>
+        <form class="searchBar" id="searchBar"><input type="text" id="searchBarInput" placeholder="Search.."></form>
+        <div class="header-right" id="header_buttons">
+
+        </div>
+    </div>
+</header>
+
+<h1 id="noConnectedTitle">Vous n'êtes pas connecté..</h1>
+
+
+<div class="tab">
+    <button class="tablinks" id="allMessagesDiv">All messages</button>
+    <button class="tablinks" id="userMessagesDiv">User messages</button>
+    <button class="tablinks" id="friendListDiv">Friends</button>
+</div>
+
+<div id="profileDiv" class="tabcontent"></div>
+<div id="friendList" class="tabcontent"></div>
+<div id="messageDiv" class="tabcontent"></div>
+
+
+<div id="profileTemplate"></div>
+<div id="messageTemplate"></div>
+<footer>
+    <hr/>
+    <p>2018 - Twister</p>
+</footer>
+</body>
+</html>
